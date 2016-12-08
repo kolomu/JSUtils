@@ -197,7 +197,7 @@ function truthCheck(collection, pre) {
  * Every element which does not pass the function (second parameter) gets removed from the array
  * 
  * @param {array} - array which should be iterated over
- * @param {function} - test function e.g. function (n) {return n>= 3;}
+ * @param {function} (predicate) - test function e.g. function (n) {return n>= 3;}
  * 
  * @returns {array} - returns the reduced array.
  */
@@ -233,6 +233,3 @@ function flattenArray(arr) {
     }
     return ret;
 }
-
-// Test 
-

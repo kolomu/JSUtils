@@ -62,7 +62,7 @@ function truncateString(str, num) {
 }
 
 /**
- * This function will check if the string is ending with the specified parameter
+ * This function will check if the string is ending with the specified argument
  * 
  * @param {string} str The string which should be checked 
  * @param {string} target - The string which must be at the end of str.
@@ -93,7 +93,7 @@ function setCharAt(str, index, chr) {
 }
 
 /**
- * This function will search and replace in the provided string the parameters
+ * This function will search and replace in the provided string the arguments
  * 
  * @param {string} str The string which should be replaced 
  * @param {string} before - The char/word/sentence which should be searched.
