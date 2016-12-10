@@ -233,3 +233,21 @@ function flattenArray(arr) {
     }
     return ret;
 }
+
+
+/** 
+ * This function will iterate over the given array, and check the array at the provided position against the propertyName.
+ * If it finds the property it will return the index else it will return -1.
+ * 
+ * @param {array} array - Which will be looked up 
+ * @param {string} propertyName - The property which will be searched 
+ * @param {int} position - The position where the property is located for multidimensional arrays
+ * 
+ * @return {int} returns -1 if not found, else the index in the array
+ */
+function findIndexForProperty(array, propertyName, position){
+    for(var i = 0; i < array.length; i++){
+        if(array[i][position] === propertyName) return i;
+    }
+    return -1;
+}
