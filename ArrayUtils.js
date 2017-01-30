@@ -1,4 +1,26 @@
 /**
+ * (FOR DEBUGGING)
+ * This function will print all Objects in the collection with the propertyValue.
+ * 
+ * @param {object} collection  - of Objects which will be iterated over
+ */
+function printObjects(objects) {
+    for (var i = 0; i < objects.length; i++) {
+        printObject(objects[i]);
+    }
+
+    function printObject(obj) {
+        var propertyNames = Object.getOwnPropertyNames(obj);
+        var consoleString = "";
+        for (var i = 0; i < propertyNames.length; i++) {
+            consoleString += propertyNames[i] + ": " + obj[propertyNames[i]] + ", ";
+        }
+        if (consoleString.length > 1) consoleString = consoleString.substring(0, consoleString.length - 2);
+        console.log(consoleString);
+    }
+}
+
+/**
  *  This function will check if the value is in the provided array. 
  * 
  *  @param {string} value - The value which should be checked
